@@ -3,7 +3,6 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://primefaces.org/ui">
 
 <h:head>
@@ -11,19 +10,34 @@
 </h:head>
 <h:body>
     <f:view>
-        <p:dataTable value="#{vehicle.vehicles}" var="v">
+        <p:dataTable id="vehicles" value="#{vehicle.vehicles}" var="v">
             <p:column headerText="Id">
-                <h:outputText value="#{v.id}" />
+                <h:outputText value="#{v.id}"/>
             </p:column>
 
             <p:column headerText="Licence#">
-                <h:outputText value="#{v.licenceNumber}" />
+                <h:outputText value="#{v.licenceNumber}"/>
             </p:column>
 
             <p:column headerText="Capacity">
-                <h:outputText value="#{v.capacity}" />
+                <h:outputText value="#{v.capacity}"/>
             </p:column>
         </p:dataTable>
+
+        <h:form>
+            <p:panel id="basic" header="Add" style="margin-bottom:20px">
+                <h:panelGrid columns="2" cellpadding="5">
+                    <p:outputLabel value="Licence#:" for="licence"/>
+                    <p:inputText id="licence" value="#{vehicle.newVehicle.licenceNumber}"/>
+
+                    <p:outputLabel value="Capacity:" for="capacity"/>
+                    <p:spinner id="capacity" value="#{vehicle.newVehicle.capacity}" min="1"/>
+                </h:panelGrid>
+
+                <p:commandButton value="Save" id="ajax" update="vehicles" action="#{vehicle.saveVehicle}"
+                                 style="margin-right:20px;" styleClass="ui-priority-primary"/>
+            </p:panel>
+        </h:form>
     </f:view>
 </h:body>
 </html>

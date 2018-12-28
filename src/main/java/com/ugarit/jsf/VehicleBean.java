@@ -17,14 +17,27 @@ public class VehicleBean implements Serializable {
     @EJB
     VehicleRemote vehicleRemote;
 
+    Vehicle newVehicle;
+
     private List<Vehicle> vehicles;
 
     @PostConstruct
     public void postConstruct() {
+        vehicles = vehicleRemote.getVehicles();
+        newVehicle = new Vehicle();
+    }
+
+    public void saveVehicle(){
+        vehicleRemote.addVehicle(newVehicle);
         vehicles = vehicleRemote.getVehicles();
     }
 
     public List<Vehicle> getVehicles() {
         return vehicles;
     }
+
+    public Vehicle getNewVehicle() {
+        return newVehicle;
+    }
+
 }
