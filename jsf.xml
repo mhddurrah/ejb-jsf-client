@@ -100,8 +100,8 @@
     <pathelement location="${path.variable.maven_repository}/com/sun/mail/javax.mail/1.5.0/javax.mail-1.5.0.jar"/>
   </path>
   
-  <path id="library.maven:_com.ugarit:ejb:ejb-client:client:1.0-snapshot.classpath">
-    <pathelement location="${path.variable.maven_repository}/com/ugarit/ejb/1.0-SNAPSHOT/ejb-1.0-SNAPSHOT-client.jar"/>
+  <path id="library.maven:_com.ejbjsf:ejb:ejb-client:client:1.0-snapshot.classpath">
+    <pathelement location="${path.variable.maven_repository}/com/ejbjsf/ejb/1.0-SNAPSHOT/ejb-1.0-SNAPSHOT-client.jar"/>
   </path>
   
   <path id="library.maven:_commons-codec:commons-codec:1.2.classpath">
@@ -227,7 +227,7 @@
     <copy file="${path.variable.maven_repository}/javax/javaee-api/7.0/javaee-api-7.0.jar" tofile="${artifact.output.jsf:war_exploded}/WEB-INF/lib/javaee-api-7.0.jar"/>
     <copy file="${path.variable.maven_repository}/com/sun/mail/javax.mail/1.5.0/javax.mail-1.5.0.jar" tofile="${artifact.output.jsf:war_exploded}/WEB-INF/lib/javax.mail-1.5.0.jar"/>
     <copy file="${path.variable.maven_repository}/javax/activation/activation/1.1/activation-1.1.jar" tofile="${artifact.output.jsf:war_exploded}/WEB-INF/lib/activation-1.1.jar"/>
-    <copy file="${path.variable.maven_repository}/com/ugarit/ejb/1.0-SNAPSHOT/ejb-1.0-SNAPSHOT-client.jar" tofile="${artifact.output.jsf:war_exploded}/WEB-INF/lib/ejb-1.0-SNAPSHOT-client.jar"/>
+    <copy file="${path.variable.maven_repository}/com/ejbjsf/ejb/1.0-SNAPSHOT/ejb-1.0-SNAPSHOT-client.jar" tofile="${artifact.output.jsf:war_exploded}/WEB-INF/lib/ejb-1.0-SNAPSHOT-client.jar"/>
     <mkdir dir="${artifact.output.jsf:war_exploded}/META-INF"/>
     <copy file="${basedir}/target/jsf/META-INF/MANIFEST.MF" tofile="${artifact.output.jsf:war_exploded}/META-INF/MANIFEST.MF"/>
     <copy todir="${artifact.output.jsf:war_exploded}">

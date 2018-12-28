@@ -28,7 +28,7 @@
     <path refid="library.maven:_javax:javaee-api:7.0.classpath"/>
     <path refid="library.maven:_com.sun.mail:javax.mail:1.5.0.classpath"/>
     <path refid="library.maven:_javax.activation:activation:1.1.classpath"/>
-    <path refid="library.maven:_com.ugarit:ejb:ejb-client:client:1.0-snapshot.classpath"/>
+    <path refid="library.maven:_com.ejbjsf:ejb:ejb-client:client:1.0-snapshot.classpath"/>
   </path>
   
   <path id="jsf.runtime.production.module.classpath">
@@ -43,7 +43,7 @@
     <path refid="library.maven:_javax:javaee-api:7.0.classpath"/>
     <path refid="library.maven:_com.sun.mail:javax.mail:1.5.0.classpath"/>
     <path refid="library.maven:_javax.activation:activation:1.1.classpath"/>
-    <path refid="library.maven:_com.ugarit:ejb:ejb-client:client:1.0-snapshot.classpath"/>
+    <path refid="library.maven:_com.ejbjsf:ejb:ejb-client:client:1.0-snapshot.classpath"/>
   </path>
   
   <path id="jsf.module.classpath">
@@ -65,7 +65,7 @@
     <path refid="library.maven:_javax:javaee-api:7.0.classpath"/>
     <path refid="library.maven:_com.sun.mail:javax.mail:1.5.0.classpath"/>
     <path refid="library.maven:_javax.activation:activation:1.1.classpath"/>
-    <path refid="library.maven:_com.ugarit:ejb:ejb-client:client:1.0-snapshot.classpath"/>
+    <path refid="library.maven:_com.ejbjsf:ejb:ejb-client:client:1.0-snapshot.classpath"/>
   </path>
   
   <path id="jsf.runtime.module.classpath">
@@ -87,7 +87,7 @@
     <path refid="library.maven:_javax:javaee-api:7.0.classpath"/>
     <path refid="library.maven:_com.sun.mail:javax.mail:1.5.0.classpath"/>
     <path refid="library.maven:_javax.activation:activation:1.1.classpath"/>
-    <path refid="library.maven:_com.ugarit:ejb:ejb-client:client:1.0-snapshot.classpath"/>
+    <path refid="library.maven:_com.ejbjsf:ejb:ejb-client:client:1.0-snapshot.classpath"/>
   </path>
   
   

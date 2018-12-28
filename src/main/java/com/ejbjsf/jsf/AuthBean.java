@@ -1,4 +1,4 @@
-package com.ugarit.jsf;
+package com.ejbjsf.jsf;
 
 
 import javax.enterprise.context.SessionScoped;

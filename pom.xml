@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.ugarit</groupId>
+    <groupId>com.ejbjsf</groupId>
     <artifactId>jsf</artifactId>
     <packaging>war</packaging>
     <version>1.0.0</version>
@@ -86,7 +86,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.ugarit</groupId>
+            <groupId>com.ejbjsf</groupId>
             <artifactId>ejb-service</artifactId>
             <version>${ejb.version}</version>
             <type>ejb-client</type>
@@ -103,35 +103,6 @@
                 <configuration>
                     <packagingExcludes>pom.xml</packagingExcludes>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>net.wasdev.wlp.maven.plugins</groupId>
-                <artifactId>liberty-maven-plugin</artifactId>
-                <version>2.2</version>
-                <configuration>
-                    <assemblyArtifact>
-                        <groupId>io.openliberty</groupId>
-                        <artifactId>openliberty-runtime</artifactId>
-                        <version>[18.0.0.1,)</version>
-                        <type>zip</type>
-                    </assemblyArtifact>
-                    <serverName>${project.artifactId}Server</serverName>
-                    <configFile>src/main/liberty/config/server.xml</configFile>
-                    <include>${packaging.type}</include>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.19.1</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>integration-test</goal>
-                            <goal>verify</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
