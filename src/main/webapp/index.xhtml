@@ -25,6 +25,7 @@
         </p:dataTable>
 
         <h:form>
+            <p:growl id="growl"/>
             <p:panel id="basic" header="Add" style="margin-bottom:20px">
                 <h:panelGrid columns="2" cellpadding="5">
                     <p:outputLabel value="Licence#:" for="licence"/>
@@ -34,7 +35,7 @@
                     <p:spinner id="capacity" value="#{vehicle.newVehicle.capacity}" min="1"/>
                 </h:panelGrid>
 
-                <p:commandButton value="Save" id="ajax" update="vehicles" action="#{vehicle.saveVehicle}"
+                <p:commandButton value="Save" id="ajax" update="vehicles,growl" action="#{vehicle.saveVehicle}"
                                  style="margin-right:20px;" styleClass="ui-priority-primary"/>
             </p:panel>
         </h:form>
